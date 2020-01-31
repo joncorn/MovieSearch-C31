@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		6DAAFA1E23E482220072D03C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DAAFA1D23E482220072D03C /* AppDelegate.m */; };
 		6DAAFA2123E482220072D03C /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DAAFA2023E482220072D03C /* SceneDelegate.m */; };
-		6DAAFA2423E482220072D03C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DAAFA2323E482220072D03C /* ViewController.m */; };
 		6DAAFA2723E482220072D03C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DAAFA2523E482220072D03C /* Main.storyboard */; };
 		6DAAFA2923E482260072D03C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DAAFA2823E482260072D03C /* Assets.xcassets */; };
 		6DAAFA2C23E482260072D03C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DAAFA2A23E482260072D03C /* LaunchScreen.storyboard */; };
 		6DAAFA2F23E482260072D03C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DAAFA2E23E482260072D03C /* main.m */; };
+		6DAAFA3E23E488EB0072D03C /* JDCMovie.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DAAFA3D23E488EB0072D03C /* JDCMovie.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,13 +22,13 @@
 		6DAAFA1D23E482220072D03C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		6DAAFA1F23E482220072D03C /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		6DAAFA2023E482220072D03C /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		6DAAFA2223E482220072D03C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		6DAAFA2323E482220072D03C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		6DAAFA2623E482220072D03C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6DAAFA2823E482260072D03C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6DAAFA2B23E482260072D03C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6DAAFA2D23E482260072D03C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6DAAFA2E23E482260072D03C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6DAAFA3C23E488EB0072D03C /* JDCMovie.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDCMovie.h; sourceTree = "<group>"; };
+		6DAAFA3D23E488EB0072D03C /* JDCMovie.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDCMovie.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,19 +61,67 @@
 		6DAAFA1B23E482220072D03C /* MovieSearch-C31 */ = {
 			isa = PBXGroup;
 			children = (
+				6DAAFA2523E482220072D03C /* Main.storyboard */,
+				6DAAFA3623E482570072D03C /* Models */,
+				6DAAFA3723E4825B0072D03C /* Views */,
+				6DAAFA3823E482620072D03C /* Controllers */,
+				6DAAFA3523E4823D0072D03C /* Resources */,
+			);
+			path = "MovieSearch-C31";
+			sourceTree = "<group>";
+		};
+		6DAAFA3523E4823D0072D03C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				6DAAFA1C23E482220072D03C /* AppDelegate.h */,
 				6DAAFA1D23E482220072D03C /* AppDelegate.m */,
 				6DAAFA1F23E482220072D03C /* SceneDelegate.h */,
 				6DAAFA2023E482220072D03C /* SceneDelegate.m */,
-				6DAAFA2223E482220072D03C /* ViewController.h */,
-				6DAAFA2323E482220072D03C /* ViewController.m */,
-				6DAAFA2523E482220072D03C /* Main.storyboard */,
 				6DAAFA2823E482260072D03C /* Assets.xcassets */,
 				6DAAFA2A23E482260072D03C /* LaunchScreen.storyboard */,
 				6DAAFA2D23E482260072D03C /* Info.plist */,
 				6DAAFA2E23E482260072D03C /* main.m */,
 			);
-			path = "MovieSearch-C31";
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6DAAFA3623E482570072D03C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6DAAFA3C23E488EB0072D03C /* JDCMovie.h */,
+				6DAAFA3D23E488EB0072D03C /* JDCMovie.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6DAAFA3723E4825B0072D03C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6DAAFA3823E482620072D03C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6DAAFA3A23E482740072D03C /* ModelControllers */,
+				6DAAFA3923E4826E0072D03C /* ViewControllers */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6DAAFA3923E4826E0072D03C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		6DAAFA3A23E482740072D03C /* ModelControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ModelControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,6 +150,7 @@
 		6DAAFA1123E482220072D03C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = JDC;
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "Jon Corn";
 				TargetAttributes = {
@@ -146,9 +195,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DAAFA2423E482220072D03C /* ViewController.m in Sources */,
 				6DAAFA1E23E482220072D03C /* AppDelegate.m in Sources */,
 				6DAAFA2F23E482260072D03C /* main.m in Sources */,
+				6DAAFA3E23E488EB0072D03C /* JDCMovie.m in Sources */,
 				6DAAFA2123E482220072D03C /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -290,7 +339,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "MovieSearch-C31/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/MovieSearch-C31/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,7 +355,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "MovieSearch-C31/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/MovieSearch-C31/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
