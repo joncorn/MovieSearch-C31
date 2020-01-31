@@ -52,21 +52,28 @@
                                                 </label>
                                             </subviews>
                                         </stackView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(overview)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q3O-c6-wSy">
-                                            <rect key="frame" x="189" y="68" width="205" height="20.5"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ZAs-tS-Bev">
+                                            <rect key="frame" x="189" y="68" width="205" height="147"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(overview)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q3O-c6-wSy">
+                                                    <rect key="frame" x="0.0" y="0.0" width="205" height="147"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="W5a-ND-cMD" firstAttribute="top" secondItem="R6v-AR-5rK" secondAttribute="topMargin" id="1nf-FV-hjb"/>
+                                        <constraint firstItem="ZAs-tS-Bev" firstAttribute="top" secondItem="R6v-AR-5rK" secondAttribute="top" constant="68" id="2fP-F0-Rr8"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="dBa-vn-asN" secondAttribute="trailing" id="NOV-tk-lhV"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="q3O-c6-wSy" secondAttribute="trailing" id="P0V-4o-9zl"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="W5a-ND-cMD" secondAttribute="bottom" id="PP4-4u-omZ"/>
-                                        <constraint firstItem="q3O-c6-wSy" firstAttribute="leading" secondItem="W5a-ND-cMD" secondAttribute="trailing" constant="16" id="U7r-UT-g4J"/>
                                         <constraint firstItem="dBa-vn-asN" firstAttribute="top" secondItem="R6v-AR-5rK" secondAttribute="topMargin" id="WT1-QC-T1T"/>
-                                        <constraint firstItem="q3O-c6-wSy" firstAttribute="top" secondItem="dBa-vn-asN" secondAttribute="bottom" constant="8" id="dY6-Y2-3QI"/>
+                                        <constraint firstItem="ZAs-tS-Bev" firstAttribute="leading" secondItem="W5a-ND-cMD" secondAttribute="trailing" constant="16" id="fjb-GU-WIS"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="ZAs-tS-Bev" secondAttribute="bottom" id="kPK-7E-S9k"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="ZAs-tS-Bev" secondAttribute="trailing" id="ska-34-cji"/>
+                                        <constraint firstItem="ZAs-tS-Bev" firstAttribute="top" secondItem="dBa-vn-asN" secondAttribute="bottom" constant="8" id="vTs-fT-Wb2"/>
                                         <constraint firstItem="W5a-ND-cMD" firstAttribute="leading" secondItem="R6v-AR-5rK" secondAttribute="leadingMargin" id="xp6-FQ-wTX"/>
                                         <constraint firstItem="dBa-vn-asN" firstAttribute="leading" secondItem="W5a-ND-cMD" secondAttribute="trailing" constant="16" id="zTz-E6-dM1"/>
                                     </constraints>
