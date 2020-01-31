@@ -10,24 +10,26 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+#pragma mark - JDCMovie
 @interface JDCMovie : NSObject
 
-// Properties
+// Movie model properties
 @property (nonatomic, copy, readonly) NSString *title;
 @property (nonatomic, copy, readonly) NSString *overview;
 @property (nonatomic, copy, readonly) NSString *poster;
 @property (nonatomic, copy, readonly) NSNumber *rating;
 
-// Initializer
+// Movie model initializer
 - (instancetype)initWithTitle:(NSString *)title
                      overview:(NSString *)overview
                        poster:(NSString *)poster
                        rating:(NSNumber *)rating;
 @end
 
-// Extension for dictionary
+#pragma mark - Extension
 @interface JDCMovie (JSONConvertable)
 
+// Dictionary initializer
 - (instancetype)initWithDictionary:(NSDictionary *)dictionary;
 
 @end
