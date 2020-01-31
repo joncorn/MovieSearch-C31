@@ -19,7 +19,17 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy, readonly) NSNumber *rating;
 
 // Initializer
-- (instancetype)
+- (instancetype)initWithTitle:(NSString *)title
+                     overview:(NSString *)overview
+                   posterPath:(NSString *)posterPath
+                       rating:(NSNumber *)rating;
+@end
+
+// Extension for dictionary
+@interface JDCMovie (JSONConvertable)
+
+- (instancetype)initWithDictionary:(NSDictionary *)dictionary;
+
 @end
 
 NS_ASSUME_NONNULL_END
