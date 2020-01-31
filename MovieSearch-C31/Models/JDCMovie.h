@@ -15,13 +15,13 @@ NS_ASSUME_NONNULL_BEGIN
 // Properties
 @property (nonatomic, copy, readonly) NSString *title;
 @property (nonatomic, copy, readonly) NSString *overview;
-@property (nonatomic, copy, readonly) NSString *posterPath;
+@property (nonatomic, copy, readonly) NSString *poster;
 @property (nonatomic, copy, readonly) NSNumber *rating;
 
 // Initializer
 - (instancetype)initWithTitle:(NSString *)title
                      overview:(NSString *)overview
-                   posterPath:(NSString *)posterPath
+                       poster:(NSString *)poster
                        rating:(NSNumber *)rating;
 @end
 
