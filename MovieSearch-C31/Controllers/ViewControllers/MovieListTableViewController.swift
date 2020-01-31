@@ -35,10 +35,8 @@ class MovieListTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "movieCell", for: indexPath) as? MovieListTableViewCell else { return UITableViewCell() }
-
         let movie = movies?[indexPath.row]
-        // cell.movie = movie
-
+        cell.movie = movie
         return cell
     }
 }
